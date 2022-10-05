@@ -23,7 +23,7 @@ body {
 /* Header empieza por acá */
 
 nav h1 {
-    font-size: max(2rem, 1rem);
+    font-size: max(2rem, 0.5rem);
     font-weight: bold;
     color: #C6EBC5;
     transition: 500ms;
@@ -31,7 +31,7 @@ nav h1 {
     user-select: none;
     }
 nav h1 span {
-    font-size: max(2rem, 1rem);
+    font-size: max(2rem, 0.5rem);
     font-weight: bold;
     color: #A1C298;
     transition: 500ms;
@@ -48,8 +48,8 @@ nav h1 span:hover{
 
 nav button {
     border: none;
-    padding: 15px 20px;
-    border-radius: 20px;
+    padding: 1vh 1vw;
+    border-radius: 1vw;
     cursor: pointer;
     transition: 500ms;
 }
@@ -89,7 +89,7 @@ ul[class="no-list-style"] a:hover{
     max-height: 10vh;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: row;
 }
 
