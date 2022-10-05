@@ -8,7 +8,13 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+    overflow: scroll;
+}
+
 body {
+    position: relative;
     background-color: none;
     font-size: 1rem;
     font-family: "Roboto", Tahoma;
@@ -17,7 +23,7 @@ body {
 /* Header empieza por acá */
 
 nav h1 {
-    font-size: 2rem;
+    font-size: max(2rem, 1rem);
     font-weight: bold;
     color: #C6EBC5;
     transition: 500ms;
@@ -25,7 +31,7 @@ nav h1 {
     user-select: none;
     }
 nav h1 span {
-    font-size: 2rem;
+    font-size: max(2rem, 1rem);
     font-weight: bold;
     color: #A1C298;
     transition: 500ms;
@@ -80,7 +86,7 @@ ul[class="no-list-style"] a:hover{
 }
 
 #container {
-    max-height: 1000px;
+    max-height: 10vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -88,9 +94,9 @@ ul[class="no-list-style"] a:hover{
 }
 
 nav {
-    top: 0;
+    top: 0px;
     position: sticky;
-    padding: 10px 100px;
+    padding: 10px 50px;
     max-height: 100px;
     z-index: 99;
     background-color: white;
@@ -117,11 +123,13 @@ nav {
     width: 100vw;
     height: 100vh;
     background-color: #31C6D4;
+    background: rgb(34,193,195);
+    background: linear-gradient(52deg, rgba(34,193,195,1) 9%, rgba(34,193,195,1) 28%, rgba(255,255,255,1) 100%);
 }
 
 div[class="home_container"] p {
-    margin: 30px 0px;
-    max-width: 50vw;
+    margin: 10px 0px;
+    max-width: 40vw;
     font-family: "Epilogue", sans-serif;
     text-align: center;
     color: white;
