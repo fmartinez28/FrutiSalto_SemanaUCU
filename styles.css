@@ -131,7 +131,7 @@ nav {
 }
 
 .paragraph_info {
-    background-color: red;
+    /* background-color: red; */
     margin: 10px 0px;
     max-width: 50vw;
     min-width: 50vw;
@@ -146,7 +146,7 @@ nav {
     height: auto;
     max-width: 70vw;
     max-height: 40vh;
-    background-color: green;
+    /* background-color: green; */
 }
 
 .h2_title {
@@ -157,7 +157,7 @@ nav {
     font-size: 1.5rem;
     color: whitesmoke;
     text-align: center;
-    background-color: goldenrod;
+    /* background-color: goldenrod; */
 }
 /*
 .polygon_shape {
