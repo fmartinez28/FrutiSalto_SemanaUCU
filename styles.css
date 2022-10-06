@@ -224,6 +224,12 @@ nav {
     background: rgb(46,184,114);
     background: linear-gradient(38deg, rgba(46,184,114,1) 36%, rgba(253,255,197,1) 95%, rgba(255,255,255,1) 100%);
 }
+.benefits{
+    /* background-color: #FCFFB2; */
+    background: rgb(46,184,114);
+    height: 200vh;
+    background: linear-gradient(38deg, rgba(46,184,114,1) 36%, rgba(253,255,197,1) 95%, rgba(255,255,255,1) 100%);
+}
 
 .mapa {
     /* background-color: #B6E388; */
@@ -248,4 +254,13 @@ nav {
     height: 70vh;
     width: 70vw;
     max-height: 70vh;
+}
+.smol_h3{
+    margin: 10px 0px;
+    max-width: 60vw;
+    font-family: "Epilogue", sans-serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: whitesmoke;
+    text-align: center;
 }
