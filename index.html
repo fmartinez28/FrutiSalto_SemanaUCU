@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <script src="index.js"></script>
-    <title>Rediscovering Nature</title>
+    <title>FrutiSalto</title>
+    <script src="https://cdn.jsdelivr.net/npm/ol@v7.1.0/dist/ol.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v7.1.0/ol.css">
+    <link rel="shortcut icon" href="Media/logo.svg" type="image/x-icon">
 </head>
 <body>
     <header>
@@ -22,22 +25,36 @@
             </div>
         </nav>
     </header>
-    <div id="home" class="home_container">
-        <object id="trees-svg" data="Media/tree-svgrepo-com.svg" width="300vw" height="300vh"> </object>
-        <h2>¿Qué es FrutiSalto?</h2>
-        <p>
-            Descripción de el proyecto, cómo surgió, por qué, semana ucu blabla, esto y aquello, que
-            para qué sirve, en dónde másblablabla.
-        </p>
-        <div class="polygon_shape"></div>
-    </div>
-    <div id="about_us" class="about-us_container">
-    </div>
-    <div id="map" class="map_container">
-
-    </div>
+    <main>
+        <section>
+            <div id="home" class="home container">
+                <object id="trees-svg" class="svg" data="Media/tree-svgrepo-com.svg"></object>
+                <h2 class="h2_title">¿Qué es FrutiSalto?</h2>
+                <p class="paragraph_info">
+                    Descripción de el proyecto, cómo surgió, por qué, semana ucu blabla, esto y aquello, que
+                    para qué sirve, en dónde másblablabla.
+                </p>
+                <div class="polygon_shape"></div>
+            </div>
+        </section>
+        <section>
+            <div id="about_us" class="container about-us">
+                <h2 class="h2_title">Acerca de Nosotros</h2>
+                <p class="paragraph_info">
+                    Somos un grupo de estudiantes de la ucu blablabla
+                </p>
+            </div>
+        </section>
+        <section>
+            <div id="map" class="container map">
+                <h2 class="h2_title">Mapa</h2>
+                <div id="map"></div>
+                <script type="module" src="./main.js"></script>
+            </div>
+        </section>
+    </main>
     <footer>
-
+        <div class="container footer"></div>
     </footer>
 </body>
 </html>
