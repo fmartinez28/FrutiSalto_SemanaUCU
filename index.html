@@ -5,42 +5,42 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FrutiSalto</title>
-    <link rel="shortcut icon" href="Media/logo.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="Media/logo-svg.png" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="./res/ol/ol.css">
-    <script src="./main.js"></script>
-    <script src="res/ol/dist/ol.js"></script>
+    <script src="./main.js" defer></script>
+    <script src="res/ol/dist/ol.js" defer></script>
 </head>
 <body>
     <header>
         <nav class="navbar">
             <div id="container">
                 <h1 class="div-switch-color">Fruti<span class="span-switch-color">Salto</span></h1>
-                <ul class="no-list-style">
+                <ul id="navbaritems" data-visible="false" class="no-list-style">
                     <li><a href="#home">Inicio</a></li>
                     <li><a href="#about_us">Nosotros</a></li>
                     <li><a href="#benefits">Beneficios</a></li>
                     <li><a href="#consume">Consumo</a></li>
                     <li><a href="#map">Mapa</a></li>
-                </ul>                    
-                <div class="menu">
+                </ul>
+                <!-- <div class="menu">
                     <span class="menu-portion"></span>
                     <span class="menu-portion"></span>
                     <span class="menu-portion"></span>
-                </div>           
+                </div>            -->
             </div>
         </nav>
     </header>
     <main>
         <section>
             <div id="home" class="home container">
-                <object id="trees-svg" class="svg" data="Media/tree-svgrepo-com.svg"></object>
+                <img src="Media/logo-svg.png" alt="Logo FrutiSalto" width="200vw" height="200vh">
                 <h2 class="h2_title">
                     ¿Qué es FrutiSalto?
                 </h2>
                 <p class="paragraph_info">
-                    Descripción de el proyecto, cómo surgió, por qué, semana ucu blabla, esto y aquello, que
-                    para qué sirve, en dónde másblablabla.
+                    Proyecto propuesto para la Semana UCU, el cual se centra en la investigación de las distintas especies de árboles
+                    frutales en las calles de Salto, al igual que su clasificación y discusión en una página web elaborada por el mismo equipo.
                 </p>
             </div>
         </section>
@@ -53,6 +53,7 @@
                     </svg>
                 </div>
                 <h2 class="h2_title">Acerca de Nosotros</h2>
+                <img src="Media/people-user-svgrepo-com.svg" alt="Icono ambiental" style="width: min(30vh, 10rem); margin: 2rem;">
                 <p class="paragraph_info">
                     Somos estudiantes de la Universidad Católica del Uruguay sede Salto, como propuesta de proyecto 
                     se nos alentó a la creación de una página web, donde se muestre un mapa con la ubicación de los 
@@ -61,7 +62,7 @@
             </div>
         </section>
         <section>
-            <div id="about_us" class="container benefits">
+            <div id="benefits" class="container benefits">
                 <div class="custom-shape-divider-top-1665094490 aboutusfill">
                     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                         <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
@@ -69,37 +70,42 @@
                 </div>
                 <h2 class="h2_title" style="margin: 50px; ">Beneficios</h2>
                 <h3 class="smol_h3">Ambientales</h3>
+                <img src="Media/icon_ambiental.png" alt="Icono ambiental" style="width: min(50vh, 15rem); margin: 2rem;">
                 <p class="paragraph_info">
                     - Son excelentes filtros para contaminantes urbanos y partículas finas como el polvo, reteniendo la suciedad y el humo en las hojas y corteza.<br>
-                            - Los árboles maduros regulan el flujo de agua y desempeñan un papel clave en la prevención de inundaciones.<br>
-                            - Desempeñan un papel importante en el aumento de la biodiversidad urbana, proporcionando un hábitat para la vida silvestre.<br>
-                            - Mediante la fotosíntesis producen oxígeno y absorben gran cantidad de dióxido de carbono.
+                    - Los árboles maduros regulan el flujo de agua y desempeñan un papel clave en la prevención de inundaciones.<br>
+                    - Desempeñan un papel importante en el aumento de la biodiversidad urbana, proporcionando un hábitat para la vida silvestre.<br>
+                    - Mediante la fotosíntesis producen oxígeno y absorben gran cantidad de dióxido de carbono.
                 </p>
-                <h3 class="smol_h3">Ambientales</h3>
+                <h3 class="smol_h3">Sociales</h3>
+                <img src="Media/icon_social.png" alt="Icono ambiental" style="width: min(50vh, 15rem); margin: 2rem;">
                 <p class="paragraph_info">
-                    Somos estudiantes de la Universidad Católica del Uruguay sede Salto, como propuesta de proyecto 
-                    se nos alentó a la creación de una página web, donde se muestre un mapa con la ubicación de los 
-                    árboles frutales que se encuentran a la disposición de todos los habitantes de la ciudad de Salto.
+                    - Vivir cerca de espacios verdes urbanos y tener acceso a ellos puede mejorar la salud física y mental, disminuyendo la presión arterial y el estrés. Contribuyen así al bienestar de las comunidades urbanas.<br>
+                    - Con su sombra mejoran las condiciones para la circulación por las veredas en verano.<br>
+                    - Los parques de la ciudad promueven la actividad física proporcionando espacios exteriores para la recreación.
+                    
                 </p>
+                <h3 class="smol_h3">Económicos</h3>
+                <img src="Media/icon_economico.png" alt="Icono ambiental" style="width: min(50vh, 15rem); height: auto; margin: 2rem;">
                 <p class="paragraph_info">
-                    Somos estudiantes de la Universidad Católica del Uruguay sede Salto, como propuesta de proyecto 
-                    se nos alentó a la creación de una página web, donde se muestre un mapa con la ubicación de los 
-                    árboles frutales que se encuentran a la disposición de todos los habitantes de la ciudad de Salto.
+                    -La planificación del paisaje urbano con árboles puede aumentar el valor de las propiedades en un 20%, atraer el turismo y negocios.<br>
+                    -Ubicados de forma apropiada alrededor de casas y edificios reducen los costos de consumo en aire acondicionado y calefacción.<br>
+                    -En varias ciudades se ha observado que la vegetación favorece el incremento de la productividad y mejora el ambiente laboral.<br>
+                    
                 </p>
+                <h3 class="smol_h3">Tecnológicos-culturales</h3>
+                <img src="Media/icon_tecnologicoSocial.png" alt="Icono ambiental" style="aspect-ratio: 1; width: min(50vh, 15rem); margin: 2rem;">
                 <p class="paragraph_info">
-                    Somos estudiantes de la Universidad Católica del Uruguay sede Salto, como propuesta de proyecto 
-                    se nos alentó a la creación de una página web, donde se muestre un mapa con la ubicación de los 
-                    árboles frutales que se encuentran a la disposición de todos los habitantes de la ciudad de Salto.
-                </p>
-                <p class="paragraph_info">
-                    Somos estudiantes de la Universidad Católica del Uruguay sede Salto, como propuesta de proyecto 
-                    se nos alentó a la creación de una página web, donde se muestre un mapa con la ubicación de los 
-                    árboles frutales que se encuentran a la disposición de todos los habitantes de la ciudad de Salto.
+                    -Permiten el uso de recursos locales como frutas y leña, evitando o reduciendo el uso de combustibles fósiles para obtenerlos y transportarlos.<br>
+                    -Ayudan a preservar en la cultura el uso de la medicina que brinda la naturaleza.<br>
+                    -Permiten a las personas producir parte de los alimentos que necesitan reduciendo la dependencia de productos comerciales.<br>
+                    -Los árboles y parques hacen que la ciudad sea más bella.
+                    
                 </p>
             </div>
         </section>
         <section>
-            <div id="about_us" class="container about-us">
+            <div id="consume" class="container about-us">
                 <div class="custom-shape-divider-top-1665094490 benefitsfill">
                     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                         <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
@@ -107,7 +113,10 @@
                 </div>
                 <h2 class="h2_title">Consumo</h2>
                 <p class="paragraph_info">
-                    Somos un grupo de estudiantes de la ucu blablabla
+                    Hay diferentes opiniones al respecto y es decisión de cada uno hacerlo o no.<br>
+                    En cuanto a la normativa, en Uruguay no hay nada que prohíba hacerlo. En caso de encontrarse frente a una casa particular recomendamos pedir permiso a quienes viven ahí, que probablemente hayan sido quienes lo plantaron.<br>
+                    En general el consumo de frutas es recomendable debido a que son fuente de vitaminas y minerales, algunas pueden también contener grasas, aceites y proteínas. Además son son un refrigerio saludable para los niños.<br>
+                    Te invitamos a ser parte de este proyecto ingresando información sobre árboles frutales que hayas visto en la ciudad.
                 </p>
             </div>
         </section>
@@ -120,9 +129,15 @@
     </main>
     <footer>
         <div class="container footer">
-            <p style="color: gray; font-size: 1.1rem; margin: 2vh 1vw 2vh 0;">Universidad Católica del Uruguay</p>
-            <p style="color: gray; font-size: 1.1rem; margin: 2vh 1vw 2vh 0;">Proyecto "Redescrubiendo la Naturaleza" de la Semana UCU</p>
-            <p style="color: gray; font-size: 1.1rem; margin: 2vh 1vw 2vh 0;">2022</p>
+            <p class="paragraph_info" style="text-align: left; color: rgba(255, 255, 255, 0.6);">
+                Universidad Católica del Uruguay
+            </p>
+            <p class="paragraph_info" style="text-align: left; color: rgba(255, 255, 255, 0.6);">
+                Proyecto "Redescrubiendo la Naturaleza"
+            </p>
+            <p class="paragraph_info" style="text-align: left; color: rgba(255, 255, 255, 0.6);">
+                2022
+            </p>
         </div>
     </footer>
 </body>
