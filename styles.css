@@ -189,6 +189,7 @@ ul[class="no-list-style"] a:hover{
     margin: 10px 0px;
     max-width: 50vw;
     min-width: 50vw;
+    font-size: 1.2rem;
     font-family: "Epilogue", sans-serif;
     text-align: center;
     color: white;
@@ -217,7 +218,7 @@ ul[class="no-list-style"] a:hover{
     max-width: 60vw;
     font-family: "Epilogue", sans-serif;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     color: whitesmoke;
     text-align: center;
     /* background-color: goldenrod; */
@@ -343,7 +344,7 @@ ul[class="no-list-style"] a:hover{
     max-width: 60vw;
     font-family: "Epilogue", sans-serif;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     color: whitesmoke;
     text-align: center;
 }
