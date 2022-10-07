@@ -348,3 +348,18 @@ ul[class="no-list-style"] a:hover{
     color: whitesmoke;
     text-align: center;
 }
+.sendme {
+    display: block;
+    text-align: center;
+    border: none;
+    padding: 3vh 3vw;
+    background-color: #CD104D;
+    font-family: "Epilogue", sans-serif;
+    font-weight: bold;
+    border-radius: 3vw;
+    cursor: pointer;
+}
+
+.sendme:hover {
+    background-color: #CD104DBB;
+}
