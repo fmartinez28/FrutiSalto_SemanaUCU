@@ -127,7 +127,7 @@ nav {
 }
 
 .home {
-    background-color: #31C6D4;
+    background-color: rgb(43, 122, 11);
     /* background: rgb(34,193,195);
     background: linear-gradient(52deg, rgba(34,193,195,1) 9%, rgba(34,193,195,1) 28%, rgba(255,255,255,1) 100%); */
 }
@@ -187,9 +187,24 @@ nav {
     height: 211px;
 }
 
+/*
 .custom-shape-divider-top-1665094490 .shape-fill {
-    fill: #31C6D4;
+    fill: rgb(199, 242, 164);
+}*/
+
+.homefill {
+    fill: rgb(43, 122, 11);
 }
+.aboutusfill {
+    fill: rgb(91, 179, 24);
+}
+.benefitsfill {
+    fill: rgb(125, 206, 19);
+}
+.consumefill {
+    fill: rgb(199, 242, 164);
+}
+
 /*SVG de curvas*/
 
 /*
@@ -221,14 +236,21 @@ nav {
 */
 .about-us{
     /* background-color: #FCFFB2; */
-    background: rgb(46,184,114);
-    background: linear-gradient(38deg, rgba(46,184,114,1) 36%, rgba(253,255,197,1) 95%, rgba(255,255,255,1) 100%);
+    background: rgb(91, 179, 24);
+    height: 85vh;
+    /*background: linear-gradient(38deg, rgba(46,184,114,1) 36%, rgba(253,255,197,1) 95%, rgba(255,255,255,1) 100%);*/
 }
 .benefits{
     /* background-color: #FCFFB2; */
-    background: rgb(46,184,114);
-    height: 200vh;
-    background: linear-gradient(38deg, rgba(46,184,114,1) 36%, rgba(253,255,197,1) 95%, rgba(255,255,255,1) 100%);
+    background: rgb(125, 206, 19);
+    height: 180vh;
+    
+}
+.consume{
+    /* background-color: #FCFFB2; */
+    background: rgb(85, 149, 2);
+    height: 180vh;
+    
 }
 
 .mapa {
@@ -263,4 +285,8 @@ nav {
     font-size: 1.1rem;
     color: whitesmoke;
     text-align: center;
+}
+
+hr {
+    border-style: solid 5px black;
 }
